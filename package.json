@@ -1,0 +1,25 @@
+{
+  "name": "Escape the 4th Floor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "example.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack --watch --mode=development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkim820/Escape-the-4th-Floor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jkim820/Escape-the-4th-Floor/issues"
+  },
+  "homepage": "https://github.com/jkim820/Escape-the-4th-Floor#readme",
+  "dependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}
