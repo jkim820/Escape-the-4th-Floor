@@ -10,6 +10,12 @@
     height: 400px;
 }
 
+.room2 {
+    width: 800px;
+    border: 5px solid white;
+    height: 400px;
+}
+
 body {
     background-color: #b0e0e6;
 }
@@ -69,4 +75,8 @@ a {
     text-decoration: none;
     color: black;
     padding-right: 20px;
+}
+
+.far fa-arrow-alt-circle-right {
+
 }
