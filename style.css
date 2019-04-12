@@ -4,6 +4,16 @@
     width: 100%;
 }
 
+.room1 {
+    width: 800px;
+    border: 5px solid white;
+    height: 400px;
+}
+
+body {
+    background-color: #b0e0e6;
+}
+
 h1 {
     font-size: 40px;
     text-align: center;
@@ -11,18 +21,33 @@ h1 {
     color: red;
 }
 
-body {
-    background-color: #b0e0e6;
+.social {
+    position: absolute;
+    top: 20%;
+    left: 10%;
 }
 
-.room1 {
-    width: 800px;
-    border: 5px solid white;
-    height: 400px;
+h3 {
+    font-size: 20px;
 }
 
-ul {
-    list-style-type: none;
+.linkedin-logo {
+    height: 70px;
+    width: 70px;
+    border: 2px solid black;
+}
+
+.github-logo {
+    height: 70px;
+    width: 70px;
+    border: 2px solid black;
+}
+
+audio {
+    /* align-items: center; */
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }
 
 a {

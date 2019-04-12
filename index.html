@@ -4,28 +4,46 @@
     <meta charset="utf-8" />
     <title>Escape the 4th Floor</title>
     <link href="./style.css" rel="stylesheet" type="text/css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="application/javascript" src="/dist/lib/bundle.js"></script>
 </head>
 
 <body>
     <h1>Escape the 4th Floor</h1>
     <div class="first-image">
-        <img class="room1" src="./images/room1.jpeg">
+        <img class="room1" src="./images/room1.png">
     </div>
-    <!-- <img className="title" src="./images/title.png" style="font-size:5px;"> -->
+
+    <div>
+        <h3 class="timer">Timer</h3>
+    </div>
+
+    <div class="timer">
+        <button class="start" onclick="clock();">Start</button>
+    </div>
+
+    <div class="social">
+        <h3>LinkedIn</h3>
+        <div class="linkedIn">
+            <a href="https://linkedin.com/in/john-kim-8995a736/"></a>
+            <!-- <i class="fab fa-linkedin"></i> -->
+            <img src="./images/linkedin.png" class="linkedin-logo">
+        </div>
+    
+        <h3>GitHub</h3>
+        <div class="github">
+            <a href="https://github.com/jkim820"></a>
+            <!-- <i class="fab fa-github-square"></i> -->
+            <img src="./images/github-logo.jpg" class="github-logo">
+        </div>
+    </div>
+
+    <audio controls src="./music/escape-room.mp3" class="song1"></audio>
     <!-- <canvas id="myCanvas" width="800" height="400"></canvas> -->
 
     <script>
 	// JavaScript code goes here
     </script>
-
-    <ul class="info">
-        <li style="width:100px;"><a href="https://github.com/jkim820">Github</a></li>
-        <li style="width:100px;"><a href="https://linkedin.com/in/john-kim-8995a736/">LinkedIn</a></li>
-        <li style="width:100px;"><a href="https://angel.co/jkim1?al_content=view+your+profile&al_source=transaction_feed%2Fnetwork_sclassNameebar">AngelList</a></li> 
-    </ul>
-
 </body>
 
 </html>
