@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/jkim820/Escape-the-4th-Floor#readme",
   "dependencies": {
+    "easytimer.js": "^3.1.0",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0"
   }

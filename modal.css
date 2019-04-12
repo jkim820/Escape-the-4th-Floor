@@ -1,0 +1,38 @@
+.modal { 
+    display: none; 
+}
+
+.m-backdrop {
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.m-content {
+    background-color: #f0f0f0;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 300px;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0px;
+    right: 7px;
+    font-size: 27px;
+    font-weight: bold;
+    cursor: pointer;
+    color: lightgray;
+}
+
+.modal-close:hover { 
+    color: gray; 
+}

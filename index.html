@@ -4,7 +4,10 @@
     <meta charset="utf-8" />
     <title>Escape the 4th Floor</title>
     <link href="./style.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="./modal.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">    
+    <!-- <link rel="stylesheet" href="/assets/css/flipclock.css"> -->
     <script type="application/javascript" src="./dist/lib/bundle.js"></script>
     <script type="application/javascript" src="./lib/timer.js"></script>
 </head>
@@ -20,40 +23,48 @@
     </div> -->
 
     <div>
-        <h3 class="timer">Timer</h3>
+        <h4 class="timer">Timer</h4>
     </div>
 
     <div class="timer">
-        <button id="start" onclick="countdownTimer()">Start</button>
+        <button id="start" onclick="decrement()">Start</button>
         <!-- <p id="start"></p> -->
     </div>
 
     <div class="social">
         <h3>LinkedIn</h3>
-        <div class="linkedIn">
-            <a href="https://linkedin.com/in/john-kim-8995a736/"></a>
-            <!-- <i class="fab fa-linkedin"></i> -->
+        <p class="linkedin">
+            <a href="https://linkedin.com/in/john-kim-8995a736/"><i class="fab fa-linkedin"></i></a>
             <img src="./images/linkedin.png" class="linkedin-logo">
-        </div>
+        </p>
     
         <h3>GitHub</h3>
         <div class="github">
-            <a href="https://github.com/jkim820"></a>
-            <!-- <i class="fab fa-github-square"></i> -->
+            <!-- <a href="https://github.com/jkim820"><i class="fab fa-github-square"></i></a> -->
             <img src="./images/github-logo.jpg" class="github-logo">
         </div>
     </div>
 
     <audio controls src="./music/escape-room.mp3" class="song1"></audio>
-    <!-- <canvas id="myCanvas" width="800" height="400"></canvas> -->
+
     <div>
         <img class="right-icon" src="" alt="">
-        <i class="far fa-arrow-alt-circle-right"></i>
+        <i class="far-fa-arrow-alt-circle-right"></i>
     </div>
 
-    <script>
-	// JavaScript code goes here
-    </script>
+    <button class="show-modal" onclick="modal()">Show Modal</button>
+    
+    <div class="modal">
+        <div class="m-backdrop"></div>
+        <div class="m-content">
+            <span class="modal-close">×</span>
+            <!-- modal content goes here... -->
+            <button class="modal-button">Close Modal</button>
+        </div>
+    </div>
+
+    <script src="/assets/js/libs/jquery.js"></script>
+    <script src="/assets/js/flipclock/flipclock.min.js"></script>
 </body>
 
 </html>
