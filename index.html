@@ -1,26 +1,50 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8" />
     <title>Escape the 4th Floor</title>
     <style>
-        * {
+        /* * {
+            display: block;
             padding: 0;
             margin: 0;
-        }
+        } */
 
-        canvas {
+        title {
+            display: block;
+            /* bottom: 10%; */
+            color: black;
+        }
+        /* canvas {
+            position: absolute;
             background: #eee;
             display: block;
-            margin: 0 auto;
+            margin: auto;
+            top: 0;
+            bottom: 15%;
+            left: 0;
+            right: 0;
+            z-index: 1;
+        } */
+
+        .canvas1 {
+            position: absolute;
+            width: 700px;
+            height: 400px;
+            display: block;
+            margin: auto;
+            top: 0;
+            bottom: 15%;
+            left: 0;
+            right: 0;
         }
     </style>
+    <img className="canvas1" src="./images/room1.jpeg" style="width:800px;height:400px;z-index:2;">
 </head>
 
 <body>
 
-    <canvas id="myCanvas" width="480" height="320"></canvas>
+    <canvas id="myCanvas" width="800" height="400"></canvas>
 
     <script>
 	// JavaScript code goes here

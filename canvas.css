@@ -1,0 +1,22 @@
+/* .myCanvas {
+    position: absolute;
+    background: #eee;
+    display: block;
+    margin: auto;
+    top: 0;
+    bottom: 15%;
+    left: 0;
+    right: 0;
+} */
+/* 
+title {
+    top: 0;
+    color: black;
+} */
+
+
+.canvas1 {
+    align-items: center;
+    width: 700px;
+    height: 400px; 
+}
