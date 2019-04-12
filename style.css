@@ -21,6 +21,19 @@ h1 {
     color: red;
 }
 
+.timer {
+    position: absolute;
+    font-size: 20px;
+    right: 10%;
+    top: 21%;
+}
+
+#start {
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+
 .social {
     position: absolute;
     top: 20%;
@@ -30,6 +43,7 @@ h1 {
 h3 {
     font-size: 20px;
 }
+
 
 .linkedin-logo {
     height: 70px;
