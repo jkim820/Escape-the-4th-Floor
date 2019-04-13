@@ -47,37 +47,33 @@ h1 {
 .social {
     position: absolute;
     top: 13%;
-    left: 6%;
+    left: 7%;
     /* display: flex; */
     flex-direction: column;
     align-items: center;
 }
 
-/* i {
-    height: 70px;
-    width: 70px;
-} */
-
 .linkedin, .github {
-    width: 100px;
-    height: 100px;
+    width: 74px;
+    height: 74px;
     border: 5px solid gray;
     border-radius: 9px;
-    /* background-color: var(--lightGray); */
+    background-color: var(--lightGray);
     background-color: white;
     transition-duration: 0.5s;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 
 .linkedin:hover, .github:hover {
     background-color: var(--charcoal);
 }
 
-h3 {
+.linkedin-title .github-title {
+    text-align: center;
     color: black;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 
