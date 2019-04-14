@@ -19,7 +19,7 @@
     <h1>Escape the 4th Floor</h1>
 
     <div class="room-images">
-        <img src="./images/room1.png" id="roomChange" onclick="changeImage()" />
+        <img src="images/room1.png" id="roomChange" onkeydown="changeImage()" />
         <!-- <img id="room1" src="./images/room1.png"> -->
     </div>
     
@@ -38,7 +38,17 @@
         </div> -->
     <!-- </section> -->
     
-
+    <article class="clock">
+        <div class="hours-container">
+            <div class="hours"></div>
+        </div>
+        <div class="minutes-container">
+            <div class="minutes"></div>
+        </div>
+        <div class="seconds-container">
+            <div class="seconds"></div>
+        </div>
+    </article>
 
     <div>
         <h4 class="timer">Timer</h4>
