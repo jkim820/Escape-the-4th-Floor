@@ -2,7 +2,7 @@
     display: none; 
 }
 
-.m-backdrop {
+.modal-backdrop {
     background-color: rgba(0, 0, 0, .5);
     position: fixed;
     top: 0;
@@ -11,7 +11,7 @@
     left: 0;
 }
 
-.m-content {
+.modal-content {
     background-color: #f0f0f0;
     position: fixed;
     left: 50%;

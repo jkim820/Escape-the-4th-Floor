@@ -1,10 +1,10 @@
-.first-image {
+.room-images {
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-#room1 {
+#roomChange {
     width: 800px;
     border: 5px solid white;
     height: 400px;
@@ -31,4 +31,10 @@
     /* width: 800px;
     border: 5px solid white;
     height: 400px; */
+}
+
+#navLeft {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }

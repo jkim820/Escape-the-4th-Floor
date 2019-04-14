@@ -18,27 +18,25 @@
 <body>
     <h1>Escape the 4th Floor</h1>
 
-    <section>
-        <div class="first-image">
-            <img src="./images/room1.png" />
-            <!-- <img id="room1" src="./images/room1.png"> -->
-        </div>
-        
-        <div id="navRight">
-            <img src="images/right-arrow.png" class="right-arrow-btn" name="pic" id="pic" onclick="changeRightImage()">
-        </div>
-    </section>
+    <div class="room-images">
+        <img src="./images/room1.png" id="roomChange" onclick="changeImage()" />
+        <!-- <img id="room1" src="./images/room1.png"> -->
+    </div>
+    
+    <!-- <div id="navRight">
+        <img src="images/right-arrow.png" class="right-arrow-btn" name="pic" id="pic" onclick="changeImage()">
+    </div> -->
 
-    <section>
+    <!-- <section> -->
         <!-- <div id="second-image">
             <img id="room2" src="./images/room2.png">
             <input type="button" value="Right" onclick="changeImage();" class="right-arrow-btn" style="visibility:visible;"/>
         </div> -->
 
-        <div id="navLeft">
+        <!-- <div id="navLeft">
             <img src="images/left-arrow.png" class="left-arrow-btn" name="pic" id="pic" onclick="changeLeftImage()">
-        </div>
-    </section>
+        </div> -->
+    <!-- </section> -->
     
 
 
@@ -71,8 +69,8 @@
     <button class="show-modal" onclick="modal()">Show Modal</button>
     
     <div class="modal">
-        <div class="m-backdrop"></div>
-        <div class="m-content">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
             <span class="modal-close">×</span>
                 <p class="text">
                     It's been 9 weeks and you're still stuck on the 4th floor. <br/> 
