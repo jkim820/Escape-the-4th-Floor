@@ -23,6 +23,16 @@
     border-radius: 4px;
 }
 
+.text {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
 .modal-close {
     position: absolute;
     top: 0px;
@@ -35,4 +45,14 @@
 
 .modal-close:hover { 
     color: gray; 
+}
+
+.modal-button {
+    font-weight: bold;
+    /* border: 1px solid gray; */
+    /* border-radius: 5px; */
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 38%;
 }
