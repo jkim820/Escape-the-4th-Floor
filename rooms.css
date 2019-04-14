@@ -11,23 +11,16 @@
 }
 
 #second-image {
+    visibility: hidden;
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
 .room2 {
-    position: absolute;
+    /* position: absolute; */
     width: 800px;
     border: 5px solid white;
     height: 400px;
-    background: url(images/room2.png);
-}
-
-.right-button {
-    position: absolute;
-    height: 100px;
-    width: 50px;
-    top: 30%;
-    right: 15%;
+    /* background-image: url(images/room2.png); */
 }

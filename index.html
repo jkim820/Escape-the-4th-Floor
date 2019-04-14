@@ -8,7 +8,6 @@
     <link href="./modal.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">    
-    <!-- <link rel="stylesheet" href="/assets/css/flipclock.css"> -->
     <script type="application/javascript" src="./dist/lib/bundle.js"></script>
     <script type="application/javascript" src="./lib/timer.js"></script>
     <script type="application/javascript" src="./lib/display.js"></script>
@@ -19,15 +18,34 @@
     <div class="first-image">
         <img class="room1" src="./images/room1.png">
     </div>
-
-    <div id="second-image">
-        <input type="button" value="Right" onclick="secondRoom();" class="right-button" />
-        <img class="room2" src="./images/room2.png" style="visibility:hidden">
-    <div>
-            
-    </div id="navRight" onclick="navRight();">
+    
+    <div id="navRight">
+        <img src="images/right-arrow.png" class="right-arrow-btn">
     </div>
 
+    <div id="second-image">
+        <input type="button" value="Right" onclick="preloadImages();" class="right-arrow-btn" style="visibility:visible;"/>
+        <img id="myButton">
+        <!-- <img id="room2" src="./images/room2.png"> -->
+    </div>
+
+    <!-- <script type="text/javascript">
+        let images = ['room1.png', 'room2.png', 'room3.png'],
+            i = 1;
+
+        // preload
+        for (let j = images.length; j--;) {
+            let img = new Image();
+            img.src = images[j];
+        }
+
+        // event handler
+        document.getElementById('myButton').addEventListener('click', function () {
+            this.src = images[i >= images.length - 1 ? i = 0 : ++i];
+        }, false);
+    </script> -->
+
+            
     <div>
         <h4 class="timer">Timer</h4>
     </div>
@@ -39,25 +57,20 @@
     <div class="social">
         <h3 class="linkedin-title">LinkedIn</h3>
         <p class="linkedin">
-            <a href="https://linkedin.com/in/john-kim-8995a736/">
-                <img src="./images/linkedin.png" class="linkedin-logo">
+            <a href="https://linkedin.com/in/john-kim-8995a736/" class="linkedin-logo"><i class="fab fa-linkedin"></i>
+                <!-- <img src="./images/linkedin.png" class="linkedin-logo"> -->
             </a>
         </p>
     
         <h3 class="github-title">GitHub</h3>
         <div class="github">
-            <a href="https://github.com/jkim820">
-                <img src="./images/github-logo.jpg" class="github-logo">
+            <a href="https://github.com/jkim820" class="github-logo"><i class="fab fa-github"></i>
+                <!-- <img src="./images/github-logo.png" class="github-logo"> -->
             </a>
         </div>
     </div>
 
     <audio controls src="./music/escape-room.mp3" class="song1"></audio>
-
-    <div>
-        <img class="right-icon" src="" alt="">
-        <i class="far-fa-arrow-alt-circle-right"></i>
-    </div>
 
     <button class="show-modal" onclick="modal()">Show Modal</button>
     
@@ -71,7 +84,6 @@
     </div>
 
     <!-- <script src="/assets/js/libs/jquery.js"></script> -->
-    <!-- <script src="/assets/js/flipclock/flipclock.min.js"></script> -->
 </body>
 
 </html>
