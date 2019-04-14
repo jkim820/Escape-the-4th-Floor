@@ -1,0 +1,33 @@
+.first-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.room1 {
+    width: 800px;
+    border: 5px solid white;
+    height: 400px;
+}
+
+#second-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.room2 {
+    position: absolute;
+    width: 800px;
+    border: 5px solid white;
+    height: 400px;
+    background: url(images/room2.png);
+}
+
+.right-button {
+    position: absolute;
+    height: 100px;
+    width: 50px;
+    top: 30%;
+    right: 15%;
+}

@@ -4,12 +4,14 @@
     <meta charset="utf-8" />
     <title>Escape the 4th Floor</title>
     <link href="./style.css" rel="stylesheet" type="text/css">
+    <link href="./rooms.css" rel="stylesheet" type="text/css">
     <link href="./modal.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">    
     <!-- <link rel="stylesheet" href="/assets/css/flipclock.css"> -->
     <script type="application/javascript" src="./dist/lib/bundle.js"></script>
     <script type="application/javascript" src="./lib/timer.js"></script>
+    <script type="application/javascript" src="./lib/display.js"></script>
 </head>
 
 <body>
@@ -18,9 +20,13 @@
         <img class="room1" src="./images/room1.png">
     </div>
 
-    <!-- <div class="second-image">
-        <img class="room2" src="./images/room2.png">
-    </div> -->
+    <div id="second-image">
+        <input type="button" value="Right" onclick="secondRoom();" class="right-button" />
+        <img class="room2" src="./images/room2.png" style="visibility:hidden">
+    <div>
+            
+    </div id="navRight" onclick="navRight();">
+    </div>
 
     <div>
         <h4 class="timer">Timer</h4>
@@ -64,8 +70,8 @@
         </div>
     </div>
 
-    <script src="/assets/js/libs/jquery.js"></script>
-    <script src="/assets/js/flipclock/flipclock.min.js"></script>
+    <!-- <script src="/assets/js/libs/jquery.js"></script> -->
+    <!-- <script src="/assets/js/flipclock/flipclock.min.js"></script> -->
 </body>
 
 </html>
