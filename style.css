@@ -110,3 +110,11 @@ a {
     top: 35%;
     right: 30%;
 }
+
+.left-arrow-btn {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 35%;
+    left: 30%;
+}

@@ -22,14 +22,13 @@
     width: 800px;
     border: 5px solid white;
     height: 400px;
-    /* background-image: url(images/room2.png); */
 }
 
 #pic {
     /* display: flex;
     justify-content: center;
-    width: 100%;
-    width: 800px;
+    width: 100%; */
+    /* width: 800px;
     border: 5px solid white;
     height: 400px; */
 }
