@@ -47,12 +47,19 @@ h1 {
     font-size: 22px;
 }
 
+i {
+    flex-direction: column;
+    position: absolute;
+    top: 17%;
+}
+
 .linkedin {
+    /* position: absolute; */
     width: 76px;
     height: 75px;
     /* border: 5px solid gray; */
     border-radius: 9px;
-    /* background-color: rgb(247, 212, 14); */
+    background-color: rgb(247, 212, 14);
     transition-duration: 0.5s;
     display: flex;
     /* justify-content: center; */
@@ -73,16 +80,18 @@ h1 {
 
 .github {
     width: 76px;
-    height: 76px;
+    height: 75px;
     /* border: 5px solid gray; */
-    border-radius: 9px;
-    /* background-color: rgb(247, 212, 14); */
+    border-radius: 100%;
+    background-color: rgb(247, 212, 14);
     transition-duration: 0.5s;
-    display: flex;
+    /* display: flex; */
 }
 
 .github-logo {
-    font-size: 90px;
+    top: 76%;
+    position: absolute;
+    font-size: 80px;
 }
 
 .linkedin:hover, .github:hover {
