@@ -16,18 +16,18 @@
 <body>
     <h1>Escape the 4th Floor</h1>
     <div class="first-image">
-        <img class="room1" src="./images/room1.png">
+        <img src="./images/room1.png" />
+        <!-- <img id="room1" src="./images/room1.png"> -->
     </div>
     
     <div id="navRight">
-        <img src="images/right-arrow.png" class="right-arrow-btn">
+        <img src="images/right-arrow.png" class="right-arrow-btn" name="pic" id="pic" onclick="changeImage()">
     </div>
 
-    <div id="second-image">
-        <input type="button" value="Right" onclick="preloadImages();" class="right-arrow-btn" style="visibility:visible;"/>
-        <img id="myButton">
-        <!-- <img id="room2" src="./images/room2.png"> -->
-    </div>
+    <!-- <div id="second-image">
+        <input type="button" value="Right" onclick="changeImage();" class="right-arrow-btn" style="visibility:visible;"/>
+        <img id="room2" src="./images/room2.png">
+    </div> -->
 
     <!-- <script type="text/javascript">
         let images = ['room1.png', 'room2.png', 'room3.png'],
