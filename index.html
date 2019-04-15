@@ -23,12 +23,12 @@
     <h1>Escape the 4th Floor</h1>
 
     <div class="room-images">
-        <img src="images/room1.png" id="roomChange" onkeydown="changeImage();" />
+        <img src="images/clock-light.png" id="roomChange" onclick="changeImage();" />
     </div>
 
     <div id="lightswitch">
         <img id="light" onclick="lightSwitch();" src="images/lightswitch-on.png" />
-        <div id="clock" onclick="lightSwitch();">00:00</div>
+        <!-- <div id="clock" onclick="lightSwitch();">00:00</div> -->
     </div>
 
     <div id="dark-rooms">
@@ -101,22 +101,23 @@
                     It's been 9 weeks and you're still stuck on the 4th floor. <br/> 
                     Can you escape to the 5th floor?
                 </p>
-            <button class="modal-button">Close Modal</button>
-        </div>
-    </div> -->
-
-    <button id="myBtn">Open Modal</button>
-    
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-    
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>
-                It's been 9 weeks and you're still stuck on the 4th floor. <br />
-                Can you escape to the 5th floor?
-            </p>
+            </div>
+        </div> -->
+        
+        <button id="myBtn">Open Modal</button>
+        
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p class="start-text">
+                    It's been 9 weeks and you're still stuck on the 4th floor. <br /><br />
+                    Can you escape to the 5th floor?
+                </p>
+                <button class="modal-button">Close Modal</button>
+            </div>
         </div>
     
     </div>
