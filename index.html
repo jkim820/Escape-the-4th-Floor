@@ -23,7 +23,7 @@
     <h1>Escape the 4th Floor</h1>
 
     <div class="room-images">
-        <img src="images/clock-light.png" id="roomChange" onclick="changeImage();" />
+        <img src="images/room1.png" id="roomChange" onkeydown="changeImage();" />
     </div>
 
     <div id="lightswitch">
@@ -36,22 +36,6 @@
         <!-- <img id="light" onclick="lightSwitch();" src="images/room2-dark.png" /> -->
         <!-- <img id="light" onclick="lightSwitch();" src="images/room3-dark.png" /> -->
     </div>
-
-    
-    <!-- <div id="navRight">
-        <img src="images/right-arrow.png" class="right-arrow-btn" name="pic" id="pic" onclick="changeImage()">
-    </div> -->
-
-    <!-- <section> -->
-        <!-- <div id="second-image">
-            <img id="room2" src="./images/room2.png">
-            <input type="button" value="Right" onclick="changeImage();" class="right-arrow-btn" style="visibility:visible;"/>
-        </div> -->
-
-        <!-- <div id="navLeft">
-            <img src="images/left-arrow.png" class="left-arrow-btn" name="pic" id="pic" onclick="changeLeftImage()">
-        </div> -->
-    <!-- </section> -->
     
     <article class="clock">
         <div class="hours-container">
@@ -116,7 +100,7 @@
                     It's been 9 weeks and you're still stuck on the 4th floor. <br /><br />
                     Can you escape to the 5th floor?
                 </p>
-                <button class="modal-button">Close Modal</button>
+                <button class="modal-button" onclick="countdown(3)">Start</button>
             </div>
         </div>
     
