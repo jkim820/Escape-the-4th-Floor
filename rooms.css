@@ -39,8 +39,27 @@
     width: 100%;
 }
 
-/* #lightswitch {
+#lightswitch {
     position: absolute;
-    height: 10px;
-    width: 50px;
-} */
+    top: 30%;
+    right: 40%;
+    /* height: 1%;
+    width: 1%; */
+}
+
+#light {
+    height: 20%;
+    width: 20%;
+    /* width: 50%;
+    height: 50%;
+    object-fit: cover; */
+}
+
+#clock {
+    position: absolute;
+    top: 20%;
+    right: 35%;
+    font-size: 30px;
+    color: rgb(247, 212, 14);
+    visibility: hidden;
+}
