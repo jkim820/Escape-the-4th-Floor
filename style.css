@@ -128,3 +128,34 @@ a {
     top: 40%;
     left: 24%;
 }
+
+/* a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+} */
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.left {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.right {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.round {
+  border-radius: 100%;
+}

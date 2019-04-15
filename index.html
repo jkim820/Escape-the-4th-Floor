@@ -12,6 +12,9 @@
     <script type="application/javascript" src="./lib/entry.js"></script>
     <script type="application/javascript" src="./lib/timer.js"></script>
     <script type="application/javascript" src="./lib/rooms.js"></script>
+    <script type="application/javascript" src="./lib/room1.js"></script>
+    <script type="application/javascript" src="./lib/room2.js"></script>
+    <script type="application/javascript" src="./lib/room3.js"></script>
     <script type="application/javascript" src="./lib/modal.js"></script>
     <script type="application/javascript" src="./lib/items.js"></script>
 </head>
@@ -21,13 +24,17 @@
 
     <div class="room-images">
         <img src="images/room1.png" id="roomChange" onkeydown="changeImage();" />
-        <area shape="circle" coords="100,50,2" id="mouse">
-        <!-- <img id="room1" src="./images/room1.png"> -->
     </div>
 
     <div id="lightswitch">
         <img id="light" onclick="lightSwitch();" src="images/lightswitch-on.png" />
-        <div id="clock" onclick="lightSwitch();" style="visibility:hidden;">00:00</div>
+        <div id="clock" onclick="lightSwitch();">00:00</div>
+    </div>
+
+    <div id="dark-rooms">
+        <!-- <img id="dimmed" onclick="changeImage();" src="images/room1-dark.png" /> -->
+        <!-- <img id="light" onclick="lightSwitch();" src="images/room2-dark.png" /> -->
+        <!-- <img id="light" onclick="lightSwitch();" src="images/room3-dark.png" /> -->
     </div>
 
     
@@ -84,7 +91,7 @@
 
     <audio controls src="./music/escape-room.mp3" class="song1"></audio>
 
-    <button class="show-modal" onclick="modal()">Show Modal</button>
+    <!-- <button class="show-modal" onclick="modal()">Show Modal</button>
     
     <div class="modal">
         <div class="modal-backdrop"></div>
@@ -96,6 +103,22 @@
                 </p>
             <button class="modal-button">Close Modal</button>
         </div>
+    </div> -->
+
+    <button id="myBtn">Open Modal</button>
+    
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+    
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>
+                It's been 9 weeks and you're still stuck on the 4th floor. <br />
+                Can you escape to the 5th floor?
+            </p>
+        </div>
+    
     </div>
 
     <!-- <script src="/assets/js/libs/jquery.js"></script> -->

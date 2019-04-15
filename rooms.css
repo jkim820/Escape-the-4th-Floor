@@ -41,20 +41,20 @@
 
 #lightswitch {
     position: absolute;
-    top: 30%;
-    right: 40%;
+    top: 260px;
+    left: 350px;
 }
 
 #light {
-    height: 25%;
-    width: 25%;
+    height: 22%;
+    width: 22%;
     cursor: pointer;
 }
 
 #clock {
     position: absolute;
-    bottom: 170%;
-    left: 70%;
+    bottom: 180%;
+    left: 470%;
     font-size: 30px;
     color: rgb(247, 212, 14);
     visibility: visible;
@@ -63,4 +63,9 @@
 area { 
   /* display: none; */
   border: 1px solid red;
+}
+
+#dimmed {
+    background: darkgrey;
+    opacity: 0.2;
 }
