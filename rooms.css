@@ -59,3 +59,8 @@
     color: rgb(247, 212, 14);
     visibility: visible;
 }
+
+area { 
+  /* display: none; */
+  border: 1px solid red;
+}
