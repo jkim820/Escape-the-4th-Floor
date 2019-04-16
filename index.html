@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Escape the 4th Floor</title>
+    <link rel="icon" type="image/png" href="images/favicon.ico" />
     <link href="./style.css" rel="stylesheet" type="text/css">
     <link href="./rooms.css" rel="stylesheet" type="text/css">
     <link href="./modal.css" rel="stylesheet" type="text/css">
@@ -25,29 +26,19 @@
     <div class="room-images">
         <img src="images/room1.png" id="roomChange" onkeydown="changeImage();" />
     </div>
-
+    
     <div id="lightswitch">
         <img id="light" onclick="lightSwitch();" src="images/lightswitch-on.png" />
-        <!-- <div id="clock" onclick="lightSwitch();">00:00</div> -->
     </div>
+    <div id="dark" onclick="darkenRooms();"></div>
 
-    <div id="dark-rooms">
-        <!-- <img id="dimmed" onclick="changeImage();" src="images/room1-dark.png" /> -->
-        <!-- <img id="light" onclick="lightSwitch();" src="images/room2-dark.png" /> -->
-        <!-- <img id="light" onclick="lightSwitch();" src="images/room3-dark.png" /> -->
-    </div>
-    
-    <article class="clock">
-        <div class="hours-container">
-            <div class="hours"></div>
-        </div>
-        <div class="minutes-container">
-            <div class="minutes"></div>
-        </div>
-        <div class="seconds-container">
-            <div class="seconds"></div>
-        </div>
-    </article>
+    <!-- <div id="btn">
+        <input type="button" class="btn-group btn-action" />
+    </div> -->
+
+    <!-- <div id="dark-images">
+        <img src="images/lightswitch-off.png" id="dark-images" class="image-group">
+    </div> -->
 
     <div>
         <h4 class="timer">Timer</h4>

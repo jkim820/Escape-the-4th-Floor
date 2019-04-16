@@ -2,6 +2,14 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    z-index: 2;
+}
+
+.dark-images {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 1;
 }
 
 #roomChange {
@@ -51,21 +59,17 @@
     cursor: pointer;
 }
 
-#clock {
+/* #clock {
     position: absolute;
     bottom: 180%;
     left: 470%;
     font-size: 30px;
     color: rgb(247, 212, 14);
     visibility: visible;
-}
+} */
 
 area { 
   /* display: none; */
   border: 1px solid red;
 }
 
-#dimmed {
-    background: darkgrey;
-    opacity: 0.2;
-}
