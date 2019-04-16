@@ -103,9 +103,13 @@
 
 #mouse {
   position: absolute;
-  right: 32%;
-  top: 43.7%;
+  right: 460px;
+  top: 352px;
   cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }
 
 #mouse-close-button {

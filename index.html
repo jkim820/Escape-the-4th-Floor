@@ -22,7 +22,7 @@
     <h1>Escape the 4th Floor</h1>
 
     <div class="room-images">
-        <img src="images/room1.png" id="roomChange" onkeydown="changeImage();" />
+        <img src="images/room1.png" id="roomChange" onkeydown="changeRoom();" />
     </div>
     
     <div id="lightswitch">
@@ -35,7 +35,7 @@
     </div>
     
     <div class="timer">
-        <button id="start" onclick="countdown(3)">Start</button>
+        <button id="start">Start</button>
     </div>
     
     <div class="social">
@@ -69,7 +69,7 @@
             </div>
         </div>
         
-    <img id="mouse" src="images/mouse.png" onclick="mouse()">
+    <img id="mouse" class="hidden" src="images/mouse.png" onclick="mouse()">
     <div id="mouseModal" onclick="mouse()">
         <div class="mouse-content">
             <span class="close">&times;</span>
@@ -79,21 +79,21 @@
                 * The answer will help solve the lock combination.
             </p>
             <p class="code-question">
-                function isPrime(num) { <br />
+                function isPrime?(num) { <br />
                     &nbsp;&nbsp;&nbsp; if ( num < 2 ) return false; <br />
                     &nbsp;&nbsp;&nbsp; for ( let i = 2; i < num; i++ ) { <br />
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if ( num % i === 0 ) return false; <br />
                     &nbsp;&nbsp;&nbsp; } <br />
                     &nbsp;&nbsp;&nbsp; return true; <br />
                 } <br /><br />
-                function numberPrimes(n) { <br />
+                function numberOfPrimes(n) { <br />
                 &nbsp;&nbsp;&nbsp; let numPrimes = 0; <br />
                 &nbsp;&nbsp;&nbsp; for ( let i = 2; i <= n; i++ ) { <br />
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if ( isPrime(i) ) numPrimes += 1; <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if ( isPrime?(i) ) numPrimes += 1; <br />
                 &nbsp;&nbsp;&nbsp; } <br />
                 &nbsp;&nbsp;&nbsp; return numPrimes; <br />
                 } <br />
-                console.log(numberPrimes(12)); <br />
+                console.log(numberOfPrimes(12)); <br />
             </p>
         </div>
         <button id="mouse-close-button">Got it!</button>
