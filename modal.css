@@ -36,36 +36,37 @@
 }
 
 .start-text {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .instruction-text {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    color: rgb(255, 1, 1);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 1, 1);
 }
 
 .modal-button {
-    position: absolute;
-    top: 38%;
-    left: 47%;
-    font-size: 32px;
-    cursor: pointer;
-    background-color: #065fc5;
-    color: white; 
+  position: absolute;
+  top: 38%;
+  left: 47%;
+  font-size: 32px;
+  cursor: pointer;
+  background-color: #065fc5;
+  color: white; 
 }
 
-.instructions {
-  /* display: none; */
+
+#mouseModal {
+  display: none;
   position: fixed; /* Stay in place */
-  z-index: 1; 
+  z-index: 1; /* Sit on top */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -73,4 +74,46 @@
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.mouse-content {
+  background-color: black;
+  margin: 7% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 53%;
+  height: 46%;
+}
+
+.code-text {
+  color: rgb(247, 212, 14);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.code-question {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  /* text-align: center; */
+  /* font-weight: bold; */
+}
+
+#mouse {
+  position: absolute;
+  right: 32%;
+  top: 43.7%;
+  cursor: pointer;
+}
+
+#mouse-close-button {
+  position: absolute;
+  top: 38%;
+  right: 35%;
+  font-size: 32px;
+  cursor: pointer;
+  background-color: #065fc5;
+  color: white; 
 }

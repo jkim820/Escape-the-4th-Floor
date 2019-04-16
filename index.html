@@ -27,33 +27,33 @@
     
     <div id="lightswitch">
         <img id="light" onclick="lightSwitch();" src="images/lightswitch-on.png" />
-        <!-- <div id="dark" onclick="darkenRooms();"></div> -->
     </div>
 
+    
     <div>
         <h4 class="timer">Timer</h4>
     </div>
-
+    
     <div class="timer">
         <button id="start" onclick="countdown(3)">Start</button>
     </div>
-
+    
     <div class="social">
         <h3 class="linkedin-title">LinkedIn</h3>
         <p class="linkedin">
             <a href="https://linkedin.com/in/john-kim-8995a736/" class="linkedin-logo"><i class="fab fa-linkedin"></i>
             </a>
         </p>
-    
+        
         <h3 class="github-title">GitHub</h3>
         <div class="github">
             <a href="https://github.com/jkim820" class="github-logo"><i class="fab fa-github"></i>
             </a>
         </div>
     </div>
-
+    
     <audio controls src="./music/escape-room.mp3" class="song1"></audio>
-
+    
     <div id="startModal" class="modal">            
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -61,15 +61,45 @@
                 It's been 9 weeks and you're still stuck on the 4th floor. <br />
                 Can you escape to the 5th floor? </p>
                 <br /> <br /><br /> <br />
-            <p class="instruction-text">
-                * Find clues to unlock the correct lock combo. <br />
-                * Use the left/right arrow keys to navigate between pages.
-            </p>    
-            <button class="modal-button" onclick="countdown(3)">Start</button>
+                <p class="instruction-text">
+                    * Find clues to unlock the correct lock combo. <br />
+                    * Use the left/right arrow keys to navigate between pages.
+                </p>    
+                <button class="modal-button" onclick="countdown(3)">Start</button>
+            </div>
         </div>
+        
+    <img id="mouse" src="images/mouse.png" onclick="mouse()">
+    <div id="mouseModal" onclick="mouse()">
+        <div class="mouse-content">
+            <span class="close">&times;</span>
+            <p class="code-text">
+                * This function numberPrimes(n), takes in a number, `n` and returns <br />
+                the number of prime numbers less than or equal to `n`. <br />
+                * The answer will help solve the lock combination.
+            </p>
+            <p class="code-question">
+                function isPrime(num) { <br />
+                    &nbsp;&nbsp;&nbsp; if ( num < 2 ) return false; <br />
+                    &nbsp;&nbsp;&nbsp; for ( let i = 2; i < num; i++ ) { <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if ( num % i === 0 ) return false; <br />
+                    &nbsp;&nbsp;&nbsp; } <br />
+                    &nbsp;&nbsp;&nbsp; return true; <br />
+                } <br /><br />
+                function numberPrimes(n) { <br />
+                &nbsp;&nbsp;&nbsp; let numPrimes = 0; <br />
+                &nbsp;&nbsp;&nbsp; for ( let i = 2; i <= n; i++ ) { <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if ( isPrime(i) ) numPrimes += 1; <br />
+                &nbsp;&nbsp;&nbsp; } <br />
+                &nbsp;&nbsp;&nbsp; return numPrimes; <br />
+                } <br />
+                console.log(numberPrimes(12)); <br />
+            </p>
+        </div>
+        <button id="mouse-close-button">Got it!</button>
     </div>
 
-    <div id="container">
+    <!-- <div id="container">
         <div onclick="ups()" id="halfCircle"></div>
         <div id="lock"></div>
         <div id="locker"></div>
@@ -81,7 +111,7 @@
             <div align="center" onclick="incN5()" id="number5"></div>
             <div align="center" onclick="incN6()" id="number6"></div>
         </div>
-    </div>
+    </div> -->
     
 </body>
 
