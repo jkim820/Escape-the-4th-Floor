@@ -32,14 +32,6 @@
         <!-- <div id="dark" onclick="darkenRooms();"></div> -->
     </div>
 
-    <!-- <div id="btn">
-        <input type="button" class="btn-group btn-action" />
-    </div> -->
-
-    <!-- <div id="dark-images">
-        <img src="images/lightswitch-off.png" id="dark-images" class="image-group">
-    </div> -->
-
     <div>
         <h4 class="timer">Timer</h4>
     </div>
@@ -52,48 +44,32 @@
         <h3 class="linkedin-title">LinkedIn</h3>
         <p class="linkedin">
             <a href="https://linkedin.com/in/john-kim-8995a736/" class="linkedin-logo"><i class="fab fa-linkedin"></i>
-                <!-- <img src="./images/linkedin.png" class="linkedin-logo"> -->
             </a>
         </p>
     
         <h3 class="github-title">GitHub</h3>
         <div class="github">
             <a href="https://github.com/jkim820" class="github-logo"><i class="fab fa-github"></i>
-                <!-- <img src="./images/github-logo.png" class="github-logo"> -->
             </a>
         </div>
     </div>
 
     <audio controls src="./music/escape-room.mp3" class="song1"></audio>
 
-    <!-- <button class="show-modal" onclick="modal()">Show Modal</button>
-    
-    <div class="modal">
-        <div class="modal-backdrop"></div>
+    <div id="startModal" class="modal">            
         <div class="modal-content">
-            <span class="modal-close">×</span>
-                <p class="text">
-                    It's been 9 weeks and you're still stuck on the 4th floor. <br/> 
-                    Can you escape to the 5th floor?
-                </p>
-            </div>
-        </div> -->
-        
-        <!-- <button id="myBtn">Open Modal</button> -->
-        
-        <!-- The Modal -->
-        <div id="startModal" class="modal">
-            
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p class="start-text">
-                    It's been 9 weeks and you're still stuck on the 4th floor. <br /><br />
-                    Can you escape to the 5th floor?
-                </p>
-                <button class="modal-button" onclick="countdown(3)">Start</button>
-            </div>
+            <span class="close">&times;</span>
+            <p class="start-text">
+                It's been 9 weeks and you're still stuck on the 4th floor. <br />
+                Can you escape to the 5th floor? </p>
+                <br /> <br /><br /> <br />
+            <p class="instruction-text">
+                * Find clues to unlock the correct lock combo. <br />
+                * Use the left/right arrow keys to navigate between pages.
+            </p>    
+            <button class="modal-button" onclick="countdown(3)">Start</button>
         </div>
+    </div>
         
         <!-- <div id="instructionModal" class="instructions">  
             <button class="instruction-button">Got it!</button>

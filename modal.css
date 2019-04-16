@@ -44,12 +44,22 @@
     font-weight: bold;
 }
 
+.instruction-text {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
 .modal-button {
     position: absolute;
-    top: 45%;
-    /* margin: 0 auto; */
+    top: 38%;
     left: 47%;
-    font-size: 30px;
+    font-size: 32px;
+    cursor: pointer;
+    background-color: #065fc5;
+    color: white;
     /* display: flex; */
     /* justify-content: center; */    
 }
@@ -67,13 +77,13 @@
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-.instruction-text {
+/* .instruction-text {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 30px;
     font-weight: bold;
-}
+} */
 
 .instruction-button {
     position: absolute;
