@@ -9,13 +9,11 @@
     <link href="./modal.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Mono" />
     <script type="application/javascript" src="./dist/lib/bundle.js"></script>
     <script type="application/javascript" src="./lib/entry.js"></script>
     <script type="application/javascript" src="./lib/timer.js"></script>
     <script type="application/javascript" src="./lib/rooms.js"></script>
-    <script type="application/javascript" src="./lib/room1.js"></script>
-    <script type="application/javascript" src="./lib/room2.js"></script>
-    <script type="application/javascript" src="./lib/room3.js"></script>
     <script type="application/javascript" src="./lib/modal.js"></script>
     <script type="application/javascript" src="./lib/items.js"></script>
 </head>
@@ -70,20 +68,21 @@
             <button class="modal-button" onclick="countdown(3)">Start</button>
         </div>
     </div>
-        
-        <!-- <div id="instructionModal" class="instructions">  
-            <button class="instruction-button">Got it!</button>
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p class="instruction-text">
-                    It's been 9 weeks and you're still stuck on the 4th floor. <br /><br />
-                    Can you escape to the 5th floor?
-                </p>
-                <button class="affirmation-button">Got it!</button>
-            </div>
-        </div> -->
-    
+
+    <div id="container">
+        <div onclick="ups()" id="halfCircle"></div>
+        <div id="lock"></div>
+        <div id="locker"></div>
+        <div id="code">
+            <div align="center" onclick="incN1()" id="number1"></div>
+            <div align="center" onclick="incN2()" id="number2"></div>
+            <div align="center" onclick="incN3()" id="number3"></div>
+            <div align="center" onclick="incN4()" id="number4"></div>
+            <div align="center" onclick="incN5()" id="number5"></div>
+            <div align="center" onclick="incN6()" id="number6"></div>
+        </div>
     </div>
+    
 </body>
 
 </html>

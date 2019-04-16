@@ -26,19 +26,9 @@
 }
 
 .room2 {
-    /* position: absolute; */
     width: 800px;
     border: 5px solid white;
     height: 400px;
-}
-
-#pic {
-    /* display: flex;
-    justify-content: center;
-    width: 100%; */
-    /* width: 800px;
-    border: 5px solid white;
-    height: 400px; */
 }
 
 #navLeft {
@@ -59,14 +49,6 @@
     cursor: pointer;
 }
 
-/* #clock {
-    position: absolute;
-    bottom: 180%;
-    left: 470%;
-    font-size: 30px;
-    color: rgb(247, 212, 14);
-    visibility: visible;
-} */
 
 area { 
   /* display: none; */
