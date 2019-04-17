@@ -1,8 +1,10 @@
 #lock {
     /* display: none; */
     position: absolute;
-    top: 39%;
-    left: 52%;
+    /* top: 39%;
+    left: 52%; */
+    top: 312px;
+    left: 750px;
     margin-top: -170px;
     margin-left: -269px;
     padding: 36.5px;
@@ -15,6 +17,20 @@
     background-color: rgb(236, 225, 225);
     border-radius: 15px;
     border: 1px solid darkgray;
+}
+
+#mid {
+    position: absolute;
+    width: 23px;
+    height: 2px;
+    margin-top: 76px;
+    margin-left: -23px;
+    background: black;
+    /* linear-gradient(
+        rgba(0, 0, 0, 0.2) 1px, 
+        transparent 1px, 
+        transparent 3px, 
+        rgba(0, 0, 0, 0.3) 3px); */
 }
 
 #number-wrapper {
@@ -52,16 +68,26 @@
     transition: 0.5s;
 }
 
+.top-number {
+    transform: rotateX(50deg);
+}
+
+.bottom-number {
+    transform: rotateX(-50deg);
+    color: #413D3B;
+    text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.2), 0 -2px 0 rgba(255, 255, 255, 0.1);
+}
+
 .first-num {
     /* color: rgb(247, 212, 14);; */
     color: black;
 }
 
 .dots {
-    display: block;
-    position: absolute;
-    top: 18px;
-    left: 18px;
+    /* display: block; */
+    /* position: absolute; */
+    /* top: 18px;
+    left: 18px; */
 	width: 15px;
 	height: 15px;
     border-radius: 10px;   
@@ -69,22 +95,26 @@
 	background: black;
 }
 
-/* #lock-plate span:first-child{
-	top: 9px;
-	left: 9px;
+#lock-plate span:first-child{
+    position: absolute;
+	top: 18px;
+	left: 18px;
 }
 
 #lock-plate span:nth-child(2){
-	top: 9px;
-	right: 9px;
+    position: absolute;
+	top: 18px;
+	right: 18px;
 }
 
 #lock-plate span:nth-child(3){
-	bottom: 9px;
-	left: 9px;
+    position: absolute;
+    bottom: 18px;
+	left: 18px;
 }
 
 #lock-plate span:nth-child(4){
-	bottom: 9px;
-	right: 9px;
-} */
+    position: absolute;
+    bottom: 18px;
+	right: 18px;
+}
