@@ -7,6 +7,7 @@
     <link href="./style.css" rel="stylesheet" type="text/css">
     <link href="./rooms.css" rel="stylesheet" type="text/css">
     <link href="./modal.css" rel="stylesheet" type="text/css">
+    <link href="./lock.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">    
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Mono" />
@@ -16,6 +17,7 @@
     <script type="application/javascript" src="./lib/rooms.js"></script>
     <script type="application/javascript" src="./lib/modal.js"></script>
     <script type="application/javascript" src="./lib/items.js"></script>
+    <script type="application/javascript" src="./lib/lock.js"></script>
 </head>
 
 <body>
@@ -56,25 +58,25 @@
     
     <div id="startModal" class="modal">            
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <div class="close">&times;</div>
             <p class="start-text">
                 It's been 9 weeks and you're still stuck on the 4th floor. <br />
                 Can you escape to the 5th floor? </p>
                 <br /> <br /><br /> <br />
                 <p class="instruction-text">
-                    * Find clues to unlock the correct lock combo. <br />
+                    * Click around to find clues to unlock the lock combination. <br />
                     * Use the left/right arrow keys to navigate between pages.
                 </p>    
-                <button class="modal-button" onclick="countdown(3)">Start</button>
+                <button class="modal-button" onclick="countdown(4)">Start</button>
             </div>
         </div>
         
     <img id="mouse" class="hidden" src="images/mouse.png" onclick="mouse()">
     <div id="mouseModal" onclick="mouse()">
         <div class="mouse-content">
-            <span class="close">&times;</span>
+            <div class="close">&times;</div>
             <p class="code-text">
-                * This function numberPrimes(n), takes in a number, `n` and returns <br />
+                * This function numberOfPrimes(n), takes in a number, `n` and returns <br />
                 the number of prime numbers less than or equal to `n`. <br />
                 * The answer will help solve the lock combination.
             </p>
@@ -99,20 +101,29 @@
         <button id="mouse-close-button">Got it!</button>
     </div>
 
-    <!-- <div id="container">
-        <div onclick="ups()" id="halfCircle"></div>
-        <div id="lock"></div>
-        <div id="locker"></div>
-        <div id="code">
-            <div align="center" onclick="incN1()" id="number1"></div>
-            <div align="center" onclick="incN2()" id="number2"></div>
-            <div align="center" onclick="incN3()" id="number3"></div>
-            <div align="center" onclick="incN4()" id="number4"></div>
-            <div align="center" onclick="incN5()" id="number5"></div>
-            <div align="center" onclick="incN6()" id="number6"></div>
-        </div>
-    </div> -->
+    <!-- the combo is 3555 -->
+    <div id="lock">
+        <div id="lock_set">
+            <div id="number_wrapper">
+                <div class="number">
+                    <div class="number-scroll" onSelectStart="return false">
+                        <span class="top-number">9</span>
+                        <span class="">0</span>
+                        <span class="bottom-number">1</span>
+                        <span class="">2</span>
+                        <span class="">3</span>
+                        <span class="">4</span>
+                        <span class="">5</span>
+                        <span class="">6</span>
+                        <span class="">7</span>
+                        <span class="">8</span>
+                        <span class="">9</span>
+                        <span class="">0</span>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
     
 </body>
-
 </html>

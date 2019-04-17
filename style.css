@@ -58,17 +58,13 @@ i {
     /* position: absolute; */
     width: 76px;
     height: 75px;
-    /* border: 5px solid gray; */
     border-radius: 9px;
     background-color: rgb(247, 212, 14);
     transition-duration: 0.5s;
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
 }
 
 .linkedin-logo {
-    /* padding-bottom: 30px; */
     font-size: 100px;
 }
 
@@ -82,11 +78,9 @@ i {
 .github {
     width: 76px;
     height: 75px;
-    /* border: 5px solid gray; */
     border-radius: 100%;
     background-color: rgb(247, 212, 14);
     transition-duration: 0.5s;
-    /* display: flex; */
 }
 
 .github-logo {
@@ -100,7 +94,6 @@ i {
 }
 
 audio {
-    /* align-items: center; */
     display: flex;
     justify-content: center;
     margin: auto;
@@ -136,7 +129,6 @@ a {
 } */
 
 a:hover {
-  /* background-color: #ddd; */
   color: black;
 }
 
