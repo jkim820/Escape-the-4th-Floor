@@ -9,3 +9,36 @@
     background-color: lightgray; 
     border-radius: 25px;
 }
+
+#number-wrapper {
+    background: 
+        linear-gradient(black 13%, #403C3A, black 75%, #110C14, black 85%);
+    border-radius: 8px;
+    width: 350px;
+    height: 150px;
+    box-shadow: inset 0 0 10px 2px black;
+}
+
+.number {
+    display: inline-block;
+    vertical-align: top;
+    height: 150px;
+    width: 84px;
+    margin-left: 15px;
+    background: 
+        linear-gradient(#000000 0%,#000006 3%,#08000d 4%,#292527 7%,#55514c 9%,#847f76 11%,#979289 12%,#bab3a9 15%,#d9cfc6 17%,#f4eae1 19%,#fff4ec 20%,#fffffc 22%,#ffffff 24%,#fffffe 33%,#fffdf5 35%,#fef3eb 37%,#d4ccc2 45%,#ada69d 54%,#726d66 65%,#595550 71%,#4f4b47 74%,#4b4743 76%,#4b4743 79%,#4f4b47 80%,#6a665f 84%,#6d6861 85%,#6a665f 88%,#65605a 89%,#54504b 91%,#0d0711 98%,#02000a 99%,#000004 100%);
+    border: 5px solid rgba(0, 0, 0, 0.25);
+    border-top: none;
+    border-bottom: none;
+    border-left-image: linear-gradient(white, black);
+    overflow: hidden;
+    font-size: 45px;
+    font-family: arial;
+    text-shadow: 
+        0 1px 0 rgba(255, 255, 255, 0.5),
+        0 -1px 0 rgba(0, 0, 0, 0.5),
+        0 -2px 0 rgba(255, 255, 255, 0.1);
+    color: #827D74;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 8px 10px rgba(0, 0, 0, 0.2), 0 13px 10px rgba(0, 0, 0, 0.2);
+}
