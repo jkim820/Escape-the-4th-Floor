@@ -122,8 +122,7 @@
 }
 
 #solveModal {
-  display: none;
-  position: fixed;
+  /* display: none; */
   z-index: 1; 
   left: 0;
   top: 0;
@@ -157,4 +156,24 @@
   font-size: 16px;
   /* text-align: center; */
   /* font-weight: bold; */
+}
+
+.solve-close-button {
+  position: absolute;
+  top: 38%;
+  right: 35%;
+  font-size: 32px;
+  cursor: pointer;
+  background-color: #065fc5;
+  color: white; 
+}
+
+#solve-close {
+  position: absolute;
+  top: 38%;
+  right: 35%;
+  font-size: 32px;
+  cursor: pointer;
+  background-color: #065fc5;
+  color: white; 
 }

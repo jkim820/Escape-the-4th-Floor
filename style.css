@@ -34,6 +34,7 @@ h1 {
 }
 
 .social {
+    z-index: 5;
     position: absolute;
     top: 15%;
     left: 10%;

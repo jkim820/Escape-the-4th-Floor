@@ -26,6 +26,19 @@
     <div class="room-images">
         <img src="images/room1.png" id="roomChange" onkeydown="changeRoom();" />
     </div>
+    <button id="solve-clue" onclick="solve()">SOLVE</button>
+    <div id="solveModal" class="hidden">
+        <div class="solve-content">
+            <div class="close">&times;</div>
+            <p class="solve-text">
+                At what time at a/A is the most often phrase reiterated by the students? <br /></p>
+            <br /> <br /><br /> <br />
+            <form class="solve-form" onsubmit="getAnswer();">
+                <input name="solve-name" type="text" placeholder="Answer:" />pm
+                <input type="submit" class="solve-close-button" value="SUBMIT" />
+            </form>
+        </div>
+    </div>
     
     <div id="lightswitch">
         <img id="light" onclick="lightSwitch();" src="images/lightswitch-on.png" />
@@ -101,19 +114,7 @@
         <button id="mouse-close-button">Got it!</button>
     </div>
 
-    <div id="solveModal" onclick="solve()">
-        <div class="solve-content">
-            <div class="close">&times;</div>
-            <p class="solve-text">
-                At what time during the day are students' at App Academy <br /> 
-                the loudest, many saying the same thing? </p>
-            <br /> <br /><br /> <br />
-            <p class="answer-text" class="hidden">
-                3:55 pm <br />
-            </p>
-            <button class="solve-close-button">SUBMIT</button>
-        </div>
-    </div>
+   
 
     <!-- the combo is 355 -->
     <div id="lock">
