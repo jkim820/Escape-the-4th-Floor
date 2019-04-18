@@ -1,8 +1,6 @@
 #lock {
-    /* display: none; */
+    display: none;
     position: absolute;
-    /* top: 39%;
-    left: 52%; */
     top: 312px;
     left: 750px;
     margin-top: -170px;
@@ -19,18 +17,13 @@
     border: 1px solid darkgray;
 }
 
-#mid {
+#mid-line {
     position: absolute;
     width: 23px;
     height: 2px;
     margin-top: 76px;
     margin-left: -23px;
     background: black;
-    /* linear-gradient(
-        rgba(0, 0, 0, 0.2) 1px, 
-        transparent 1px, 
-        transparent 3px, 
-        rgba(0, 0, 0, 0.3) 3px); */
 }
 
 #number-wrapper {
@@ -49,7 +42,7 @@
     border: 5px solid black;
     border-top: none;
     border-bottom: none;
-    overflow: hidden; /* hide other numbers */
+    overflow: hidden;
     font-size: 45px;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(146, 137, 137);
@@ -58,7 +51,7 @@
 }
 
 .number-scroll {
-    -webkit-user-select: none; /* prevent repeats */
+    -webkit-user-select: none;
     padding-left: 28px;
     transition: 0.5s;
 }
@@ -66,6 +59,7 @@
 .number-scroll span {
     font-weight: 600;
     transition: 0.5s;
+    margin-top: 0;
 }
 
 .top-number {
@@ -79,15 +73,10 @@
 }
 
 .first-num {
-    /* color: rgb(247, 212, 14);; */
     color: black;
 }
 
 .dots {
-    /* display: block; */
-    /* position: absolute; */
-    /* top: 18px;
-    left: 18px; */
 	width: 15px;
 	height: 15px;
     border-radius: 10px;   

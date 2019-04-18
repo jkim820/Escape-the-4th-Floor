@@ -67,7 +67,7 @@
                     * Click around to find clues to unlock the lock combination. <br />
                     * Use the left/right arrow keys to navigate between pages.
                 </p>    
-                <button class="modal-button" onclick="countdown(4)">Start</button>
+                <button class="modal-button" onclick="countdown(3)">Start</button>
             </div>
         </div>
         
@@ -101,14 +101,27 @@
         <button id="mouse-close-button">Got it!</button>
     </div>
 
+    <div id="solveModal" onclick="solve()">
+        <div class="solve-content">
+            <div class="close">&times;</div>
+            <p class="solve-text">
+                At what time during the day are students' at App Academy <br /> 
+                the loudest, many saying the same thing? </p>
+            <br /> <br /><br /> <br />
+            <p class="answer-text" class="hidden">
+                3:55 pm <br />
+            </p>
+            <button class="solve-close-button">SUBMIT</button>
+        </div>
+    </div>
+
     <!-- the combo is 355 -->
     <div id="lock">
-        <span class="dots"></span><span class="dots"></span><span class="dots"></span><span class="dots"></span>
         <div id="lock-set">
-            <div id="mid"></div>
+            <div id="mid-line"></div>
             <div id="number-wrapper">
                 <div class="number">
-                    <div class="number-scroll" onclick="fnRotateNum()" onSelectStart="return false">
+                    <div class="number-scroll">
                         <span class="top-num">9</span>
                         <span class="first-num">0</span>
                         <span class="bottom-num">1</span>
@@ -124,7 +137,7 @@
                     </div>
                 </div>
                 <div class="number">
-                    <div class="number-scroll" onclick="fnRotateNum()" onSelectStart="return false">
+                    <div class="number-scroll">
                         <span class="top-num">9</span>
                         <span class="first-num">0</span>
                         <span class="bottom-num">1</span>
@@ -140,7 +153,7 @@
                     </div>
                 </div>
                 <div class="number">
-                    <div class="number-scroll" onclick="fnRotateNum()" onSelectStart="return false">
+                    <div class="number-scroll">
                         <span class="top-num">9</span>
                         <span class="first-num">0</span>
                         <span class="bottom-num">1</span>
