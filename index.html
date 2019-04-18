@@ -17,7 +17,7 @@
     <script type="application/javascript" src="./lib/rooms.js"></script>
     <script type="application/javascript" src="./lib/modal.js"></script>
     <script type="application/javascript" src="./lib/items.js"></script>
-    <script type="application/javascript" src="./lib/lock.js"></script>
+    <script type="application/javascript" src="./lib/confetti.js"></script>
 </head>
 
 <body>
@@ -26,7 +26,10 @@
     <div class="room-images">
         <img src="images/room1.png" id="roomChange" onkeydown="changeRoom();" />
     </div>
-    <button id="solve-clue" onclick="solve()">SOLVE</button>
+
+    <audio controls src="./music/escape-room.mp3" class="song1"></audio>
+    
+    <button id="solve-button" onclick="solveModal()">SOLVE</button>
     <div id="solveModal" class="hidden">
         <div class="solve-content">
             <div class="close">&times;</div>
@@ -34,11 +37,12 @@
                 At what time at a/A is the most often phrase reiterated by the students? <br /></p>
             <br /> <br /><br /> <br />
             <form class="solve-form" onsubmit="getAnswer();">
-                <input name="solve-name" type="text" placeholder="Answer:" />pm
-                <input type="submit" class="solve-close-button" value="SUBMIT" />
+                <input id="text-box" name="solve-name" type="text" placeholder="Answer:" />pm
+                <input type="submit" class="submit-button" value="SUBMIT" />
             </form>
         </div>
     </div>
+    <canvas id="confetti"></canvas>
     
     <div id="lightswitch">
         <img id="light" onclick="lightSwitch();" src="images/lightswitch-on.png" />
@@ -67,13 +71,11 @@
         </div>
     </div>
     
-    <audio controls src="./music/escape-room.mp3" class="song1"></audio>
-    
     <div id="startModal" class="modal">            
         <div class="modal-content">
             <div class="close">&times;</div>
             <p class="start-text">
-                It's been 9 weeks and you're still stuck on the 4th floor. <br />
+                It's been 9 weeks of bootcamp and you're still stuck on the 4th floor. <br />
                 Can you escape to the 5th floor? </p>
                 <br /> <br /><br /> <br />
                 <p class="instruction-text">
@@ -117,7 +119,7 @@
    
 
     <!-- the combo is 355 -->
-    <div id="lock">
+    <!-- <div id="lock">
         <div id="lock-set">
             <div id="mid-line"></div>
             <div id="number-wrapper">
@@ -171,7 +173,6 @@
                 </div>
             </div>
         </div> 
-    </div>
-    
+    </div> -->
 </body>
 </html>

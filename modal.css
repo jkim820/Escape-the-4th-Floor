@@ -48,7 +48,7 @@
   text-align: center;
   font-size: 26px;
   font-weight: bold;
-  color: rgb(255, 1, 1);
+  color: rgb(247, 212, 14);
 }
 
 .modal-button {
@@ -122,47 +122,62 @@
 }
 
 #solveModal {
-  /* display: none; */
+  display: none;
   z-index: 1; 
   left: 0;
   top: 0;
   width: 100%; 
   height: 100%; 
   overflow: auto; 
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.4); 
+  /* background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);  */
+}
+
+#solve-button {
+  position: absolute;
+  bottom: 20%;
+  left: 46%;
+  /* justify-content: center; */
+  font-size: 30px;
+  cursor: pointer;
 }
 
 .solve-content {
+  display: flex;
+  justify-content: center;
   background-color: black;
-  margin: 7% auto;
-  padding: 20px;
+  margin: 0 auto;
+  padding: 40px;
   border: 1px solid #888;
   width: 53%;
-  height: 46%;
+  height: 55%;
 }
 
 .solve-text {
   color: rgb(247, 212, 14);
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
 }
 
-.answer-text {
-  color: white;
+#text-box {
+  color: black;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
+  align-items: center;
   /* text-align: center; */
   /* font-weight: bold; */
 }
 
-.solve-close-button {
-  position: absolute;
-  top: 38%;
-  right: 35%;
-  font-size: 32px;
+.submit-button {
+  align-items: center;
+  /* position: absolute;
+  bottom: 16%;
+  right: 23.8%; */
+  font-size: 25px;
+  width: 192px;
+  margin-top: 10px;
   cursor: pointer;
   background-color: #065fc5;
   color: white; 
@@ -177,3 +192,7 @@
   background-color: #065fc5;
   color: white; 
 }
+
+/* #confetti {
+  z-index: 10;
+} */
