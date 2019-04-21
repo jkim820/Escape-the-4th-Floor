@@ -124,8 +124,12 @@
             </p>
             <p class="code-question">
                 def duplicateLetters(string)  <br />
-                &nbsp;&nbsp;&nbsp; new_str = "" <br />
-                end<br />
+                &nbsp;&nbsp;&nbsp; new_str = [] <br />
+                &nbsp;&nbsp;&nbsp; words = string.split(" ") <br />
+                &nbsp;&nbsp;&nbsp; words.each do |word| <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; word.each do |char| <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; new_str << char if !new_str.include?(char) <br />
+                end <br /><br />
                 duplicateLetters("memo: we do not make apps"); <br />
             </p>
         </div>

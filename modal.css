@@ -163,15 +163,10 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   align-items: center;
-  /* text-align: center; */
-  /* font-weight: bold; */
 }
 
 .submit-button {
   align-items: center;
-  /* position: absolute;
-  bottom: 16%;
-  right: 23.8%; */
   font-size: 25px;
   width: 192px;
   margin-top: 10px;
@@ -188,6 +183,13 @@
   cursor: pointer;
   background-color: #065fc5;
   color: white; 
+}
+
+#projector {
+  position: absolute;
+  left: 416px;
+  top: 163px;
+  /* cursor: pointer; */
 }
 
 #projectorModal {
@@ -210,13 +212,6 @@
   border: 1px solid #888;
   width: 53%;
   height: 46%;
-}
-
-#projector {
-  position: absolute;
-  right: 460px;
-  top: 352px;
-  /* cursor: pointer; */
 }
 
 #projector-close-button {
