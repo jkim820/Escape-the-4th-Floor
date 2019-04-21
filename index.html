@@ -119,18 +119,19 @@
         <div class="projector-content">
             <div class="close">&times;</div>
             <p class="code-text">
-                * This function duplicateLetters(string), takes in a phrase, `string` and returns <br />
-                all the duplicate letters that appear in the `string`. <br />
+                * This function first_letters(string), takes in a phrase, "string" and returns <br />
+                the first letter of each word. <br /><br />
             </p>
             <p class="code-question">
-                def duplicateLetters(string)  <br />
-                &nbsp;&nbsp;&nbsp; new_str = [] <br />
+                def first_letters(string)  <br />
+                &nbsp;&nbsp;&nbsp; new_string = [ ] <br />
                 &nbsp;&nbsp;&nbsp; words = string.split(" ") <br />
                 &nbsp;&nbsp;&nbsp; words.each do |word| <br />
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; word.each do |char| <br />
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; new_str << char if !new_str.include?(char) <br />
-                end <br /><br />
-                duplicateLetters("memo: we do not make apps"); <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; new_string << word[0] <br />
+                &nbsp;&nbsp;&nbsp; end <br /><br />
+                &nbsp;&nbsp;&nbsp; return new_string.join("") <br />
+                end <br /><br /><br />
+                first_letters("prime members") <br />
             </p>
         </div>
         <button id="projector-close-button">Got it!</button>
