@@ -37,6 +37,7 @@ h1 {
     position: absolute;
     top: 15%;
     left: 10%;
+    cursor: pointer;
 }
 
 .linkedin-title {
