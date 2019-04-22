@@ -39,8 +39,10 @@
 
 #lightswitch {
     position: absolute;
-    top: 260px;
-    left: 350px;
+    top: 27%;
+    left: 31%;
+    /* top: 260px;
+    left: 350px; */
 }
 
 #light {

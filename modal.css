@@ -13,11 +13,13 @@
 
 .modal-content {
   background-color: black;
-  margin: 7% auto;
-  padding: 20px;
+  margin: 5% auto;
+  padding: 10px;
   border: 1px solid #888;
-  width: 53%; 
-  height: 46%;
+  width: 42%; 
+  height: 40%;
+  /* width: 53%; 
+  height: 46%; */
 }
 
 .close {
@@ -52,9 +54,12 @@
 }
 
 .modal-button {
-  position: absolute;
-  top: 38%;
-  left: 47%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  /* position: absolute; */
+  /* top: 20%;
+  left: 47%; */
   font-size: 32px;
   cursor: pointer;
   background-color: #065fc5;
@@ -77,11 +82,11 @@
 
 .mouse-content {
   background-color: black;
-  margin: 7% auto;
+  margin: 5% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 53%;
-  height: 46%;
+  width: 40%;
+  height: 38%;
 }
 
 .code-text {
@@ -102,9 +107,9 @@
 
 #mouse {
   position: absolute;
-  right: 460px;
   top: 352px;
-  /* cursor: pointer; */
+  right: 36.4%;
+  /* right: 460px; */
 }
 
 .hidden {
@@ -132,9 +137,9 @@
 }
 
 #solve-button {
-  position: absolute;
-  bottom: 20%;
-  left: 46%;
+  display: flex;
+  justify-content: center;
+  margin: 3% auto;
   font-size: 30px;
   cursor: pointer;
 }
@@ -146,7 +151,7 @@
   margin: 0 auto;
   padding: 40px;
   border: 1px solid #888;
-  width: 53%;
+  width: 38.5%;
   height: 55%;
 }
 
@@ -176,7 +181,8 @@
 }
 
 #solve-close {
-  position: absolute;
+  /* position: absolute; */
+  display: flex;
   top: 38%;
   right: 35%;
   font-size: 32px;
@@ -187,8 +193,10 @@
 
 #projector {
   position: absolute;
-  left: 416px;
+  left: 34.15%;
   top: 163px;
+  /* left: 416px;
+  top: 163px; */
   /* cursor: pointer; */
 }
 
@@ -207,11 +215,11 @@
 
 .projector-content {
   background-color: black;
-  margin: 7% auto;
+  margin: 5% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 53%;
-  height: 46%;
+  width: 40%;
+  height: 37.8%;
 }
 
 #projector-close-button {
