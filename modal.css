@@ -71,7 +71,7 @@
 #mouseModal {
   display: none;
   position: fixed;
-  z-index: 1; 
+  z-index: 3; 
   left: 0;
   top: 0;
   width: 100%; 
@@ -87,10 +87,10 @@
   margin: 5% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 100%; 
-  height: 100%;
-  /* width: 40%;
-  height: 38%; */
+  /* width: 100%; 
+  height: 100%; */
+  width: 44%;
+  height: 38%;
 }
 
 .code-text {
@@ -109,14 +109,14 @@
   /* font-weight: bold; */
 }
 
-#mouse {
+/* #mouse {
   position: relative;
   height: 15px;
   width: 30px;
   top: 249px;
-  /* right: 36.4%; */
   right: 208px;
-}
+  z-index: 3;
+} */
 
 .hidden {
   display: none;
@@ -157,7 +157,7 @@
   margin: 0 auto;
   padding: 40px;
   border: 1px solid #888;
-  width: 38.5%;
+  width: 45%;
   height: 55%;
 }
 
@@ -186,9 +186,9 @@
   color: white; 
 }
 
-#solve-close {
-  /* position: absolute; */
-  display: flex;
+#close {
+  position: relative;
+  /* display: flex; */
   top: 38%;
   right: 35%;
   font-size: 32px;
@@ -198,18 +198,20 @@
 }
 
 #projector {
-  position: absolute;
-  left: 34.15%;
-  top: 163px;
-  /* left: 416px;
-  top: 163px; */
+  position: relative;
+  /* z-index: 3; */
+  /* left: 34.15%; */
+  top: 60px;
+  right: 747px;
+  width: 297px; 
+  height: 182px;
   /* cursor: pointer; */
 }
 
 #projectorModal {
   display: none;
   position: fixed;
-  z-index: 1; 
+  z-index: 3; 
   left: 0;
   top: 0;
   width: 100%; 
@@ -226,8 +228,9 @@
   border: 1px solid #888;
   /* width: 100%; 
   height: 100%; */
-  width: 40%;
-  height: 37.8%;
+  width: 44%;
+  height: 38%;
+  z-index: 4; 
 }
 
 #projector-close-button {

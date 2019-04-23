@@ -13,16 +13,11 @@
 }
 
 #roomChange {
+    position: relative;
+    left: 70px;
     width: 800px;
     border: 5px solid white;
     height: 400px;
-}
-
-#second-image {
-    visibility: hidden;
-    display: flex;
-    justify-content: center;
-    width: 100%;
 }
 
 .room2 {
@@ -41,8 +36,33 @@
     position: relative;
     /* top: 27%;
     left: 31%; */
+    height: 55px;
+    width: 30px;
     top: 155px;
-    right: 775px;
+    right: 710px;
+    /* z-index: 5; */
+}
+
+#mouse-move {
+    position: relative;
+    /* top: 27%;
+    left: 31%; */
+    height: 15px;
+    width: 30px;
+    top: 251px;
+    right: 140px;
+    /* z-index: 5; */
+}
+
+#projector-move {
+    position: relative;
+    /* top: 27%;
+    left: 31%; */
+    height: 18px;
+    width: 36px;
+    top: 5px;
+    left: 48px;
+    z-index: 5;
 }
 
 #light {
