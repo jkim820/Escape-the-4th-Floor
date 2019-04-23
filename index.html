@@ -25,6 +25,81 @@
 
     <div class="room-images">
         <img src="images/room1.png" id="roomChange" onkeydown="changeRoom();" />
+        <div id="lightswitch">
+            <img id="light" onclick="lightSwitch();" src="images/lightswitch-on.png" />
+        </div>
+
+        <div id="startModal" class="modal">
+            <div class="modal-content">
+                <p class="start-text">
+                    It's been 9 weeks of bootcamp and you're still stuck on the 4th floor. <br />
+                    Can you escape to the 5th floor? </p>
+                <br /> <br /><br /> <br />
+                <p class="instruction-text">
+                    * Click around and find clues to solve the question and exit. <br />
+                    * Use the left/right arrow keys to navigate between pages.
+                </p>
+                <button class="modal-button" onclick="countdown()">Start</button>
+            </div>
+        </div>
+        
+        <img id="mouse" class="hidden" src="images/mouse.png" onclick="mouse()">
+        <div id="mouseModal" onclick="mouse()">
+            <div class="mouse-content">
+                <div class="close">&times;</div>
+                <p class="code-text">
+                    * This function numberOfPrimes(n), takes in a number, `n` and returns <br />
+                    the number of prime numbers less than or equal to `n`. <br />
+                    * The answer to this challenge will be used to solve the final question.<br />
+                </p>
+                <p class="code-question">
+                    function isPrime?(num) { <br />
+                    &nbsp;&nbsp;&nbsp; if ( num
+                    < 2 ) return false; <br />
+                    &nbsp;&nbsp;&nbsp; for ( let i = 2; i
+                    < num; i++ ) { <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if ( num % i === 0 ) return false; <br />
+                    &nbsp;&nbsp;&nbsp; } <br />
+                    &nbsp;&nbsp;&nbsp; return true; <br />
+                    } <br /><br />
+                    function numberOfPrimes(n) { <br />
+                    &nbsp;&nbsp;&nbsp; let numPrimes = 0; <br />
+                    &nbsp;&nbsp;&nbsp; for ( let i = 2; i
+                    <= n; i++ ) { <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if ( isPrime?(i) ) numPrimes += 1; <br />
+                    &nbsp;&nbsp;&nbsp; } <br />
+                    &nbsp;&nbsp;&nbsp; return numPrimes; <br />
+                    } <br />
+                    console.log(numberOfPrimes(12)); <br />
+                </p>
+            </div>
+            <button id="mouse-close-button">Got it!</button>
+        </div>
+        
+        <img id="projector" class="hidden" src="images/projector.png" onclick="projector()">
+        <div id="projectorModal" onclick="projector()">
+            <div class="projector-content">
+                <div class="close">&times;</div>
+                <p class="code-text">
+                    * This function first_letters(string), takes in the phrase, "prime members" and <br />
+                    return the first letter of each word. <br />
+                    * The answer to this challenge will be used to solve the final question. <br /><br />
+                </p>
+                <p class="code-question">
+                    def first_letters(string) <br />
+                    &nbsp;&nbsp;&nbsp; new_string = [ ] <br />
+                    &nbsp;&nbsp;&nbsp; words = string.split(" ") <br />
+                    &nbsp;&nbsp;&nbsp; words.each do |word| <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; new_string
+                    << word[0] <br />
+                    &nbsp;&nbsp;&nbsp; end <br /><br />
+                    &nbsp;&nbsp;&nbsp; return new_string.join("") <br />
+                    end <br /><br />
+                    first_letters("prime members") <br />
+                </p>
+            </div>
+            <button id="projector-close-button">Got it!</button>
+        </div>
     </div>
 
     <audio controls src="./music/escape-room.mp3" class="song1"></audio>
@@ -44,9 +119,9 @@
     </div>
     <!-- <canvas id="confetti"></canvas> -->
     
-    <div id="lightswitch">
+    <!-- <div id="lightswitch">
         <img id="light" onclick="lightSwitch();" src="images/lightswitch-on.png" />
-    </div>
+    </div> -->
 
     
     <div>
@@ -77,7 +152,7 @@
         </div>
     </div>
     
-    <div id="startModal" class="modal">            
+    <!-- <div id="startModal" class="modal">            
         <div class="modal-content">
             <p class="start-text">
                 It's been 9 weeks of bootcamp and you're still stuck on the 4th floor. <br />
@@ -89,9 +164,9 @@
                 </p>    
                 <button class="modal-button" onclick="countdown()">Start</button>
             </div>
-        </div>
+        </div> -->
         
-    <img id="mouse" class="hidden" src="images/mouse.png" onclick="mouse()">
+    <!-- <img id="mouse" class="hidden" src="images/mouse.png" onclick="mouse()">
     <div id="mouseModal" onclick="mouse()">
         <div class="mouse-content">
             <div class="close">&times;</div>
@@ -143,7 +218,7 @@
             </p>
         </div>
         <button id="projector-close-button">Got it!</button>
-    </div>
+    </div> -->
    
 </body>
 </html>
