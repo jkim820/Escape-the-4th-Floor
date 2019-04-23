@@ -35,7 +35,7 @@ h1 {
 .social {
     z-index: 5;
     position: absolute;
-    top: 15%;
+    top: 8%;
     left: 10%;
     cursor: pointer;
 }
@@ -49,7 +49,7 @@ h1 {
 i {
     flex-direction: column;
     position: absolute;
-    top: 17%;
+    top: 12%;
 }
 
 .linkedin {
@@ -67,7 +67,7 @@ i {
 }
 
 .github-title {
-    padding-top: 30px;
+    padding-top: 5px;
     text-align: center;
     color: white;
     font-size: 23px;
@@ -82,12 +82,34 @@ i {
 }
 
 .github-logo {
-    top: 76%;
+    top: 48.5%;
     position: absolute;
     font-size: 80px;
 }
 
-.linkedin:hover, .github:hover {
+.angelList-title {
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+}
+
+.angelList {
+    /* display: flex; */
+    width: 76px;
+    height: 77px;
+    border-radius: 100%;
+    background-color: rgb(247, 212, 14);
+    transition-duration: 0.5s;
+}
+
+.angelList-logo {
+    top: 83%;
+    position: absolute;
+    font-size: 77px;
+}
+
+.linkedin:hover, .github:hover, .angelList:hover {
     background-color: var(--charcoal);
 }
 
