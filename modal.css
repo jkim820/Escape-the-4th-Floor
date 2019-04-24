@@ -222,7 +222,8 @@
 
 .projector-content {
   background-color: black;
-  margin: 7% auto;
+  margin: 5% auto;
+  /* margin: 7% auto; */
   padding: 20px;
   border: 1px solid #888;
   /* width: 60%;
