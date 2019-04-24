@@ -222,11 +222,11 @@
 
 .projector-content {
   background-color: black;
-  margin: 5% auto;
+  margin: 7% auto;
   padding: 20px;
   border: 1px solid #888;
-  /* width: 100%; 
-  height: 100%; */
+  /* width: 60%;
+  height: 47%; */
   width: 44%;
   height: 38%;
   z-index: 4; 
